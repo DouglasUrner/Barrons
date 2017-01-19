@@ -7,6 +7,7 @@ public class IJLC {
         q2();
         q3();
         q4();
+        q20(347);
     }
 
     private static void q1() {
@@ -41,5 +42,11 @@ public class IJLC {
         System.out.println(13.0 / 5);
         System.out.println(13 / 5.0);
         System.out.println((double) (13 / 5));
+    }
+
+    public static void q20(int n) {
+        if (n > 10)
+            q20(n / 10);
+        System.out.print(n % 10);
     }
 }
